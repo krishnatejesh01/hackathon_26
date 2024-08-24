@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Price Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Price Comparison - Flipkart vs Amazon</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <label for="brand">Brand:</label>
+                <select id="brand" name="brand">
+                    <option value="">All</option>
+                    <option value="apple">Apple</option>
+                    <!-- Add more brands as needed -->
+                </select>
+
+                <label for="model">Model:</label>
+                <select id="model" name="model">
+                    <option value="">Select Model</option>
+                    <!-- Apple iPhone models -->
+                    <optgroup label="Apple">
+                        <option value="iphone-14">iPhone 14</option>
+                        <option value="iphone-14-pro">iPhone 14 Pro</option>
+                        <option value="iphone-13">iPhone 13</option>
+                        <option value="iphone-13-pro">iPhone 13 Pro</option>
+                        <option value="iphone-12">iPhone 12</option>
+                        <option value="iphone-12-pro">iPhone 12 Pro</option>
+                        <!-- Add more models as needed -->
+                    </optgroup>
+                </select>
+
+                <label for="specifications">Specifications:</label>
+                <select id="specifications" name="specifications">
+                    <option value="">Select Specifications</option>
+                    <option value="128gb">128GB</option>
+                    <option value="256gb">256GB</option>
+                    <option value="512gb">512GB</option>
+                    <option value="8gb-ram">8GB RAM</option>
+                    <option value="12gb-ram">12GB RAM</option>
+                    <!-- Add more specifications as needed -->
+                </select>
+
+                <button type="submit">Compare Prices</button>
+            </form>
+        </section>
+
+        <section id="comparison">
+            <h2>Price Comparison</h2>
+            <div id="flipkart-comparison" class="comparison">
+                <h3>Flipkart</h3>
+                <div id="flipkart-products" class="products">
+                    <!-- Flipkart products will be displayed here -->
+                </div>
+            </div>
+            <div id="amazon-comparison" class="comparison">
+                <h3>Amazon</h3>
+                <div id="amazon-products" class="products">
+                    <!-- Amazon products will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Price Comparison</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
